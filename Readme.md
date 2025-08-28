@@ -1,10 +1,10 @@
-## Zepto E-commerce SQL Data Analysis Project
+# Zepto E-commerce SQL Data Analysis Project
 
 This project is a complete, end-to-end SQL Data Analyst Portfolio Project based on an e-commerce inventory dataset inspired by Zepto — one of India’s fastest-growing quick-commerce startups.
 
 The project simulates how real data analysts work with messy retail data to explore, clean, and generate actionable insights.
 
-# Project Overview
+## Project Overview
 
 The main objectives of this project are to:
 
@@ -16,7 +16,7 @@ Clean the dataset by handling nulls, removing invalid rows, and standardizing pr
 
 Generate business-driven insights on discounts, revenue, inventory, and product value
 
-# Dataset Overview
+## Dataset Overview
 
 Source: Public dataset inspired by Zepto’s product catalog (from Kaggle)
 
@@ -24,7 +24,7 @@ Unit of observation: Each row is a unique SKU (Stock Keeping Unit)
 
 Key Details: Duplicate product names may appear in different package sizes, weights, or discounts — mimicking real-world retail catalogs.
 
-# Columns
+## Columns
 
 sku_id: Unique product identifier
 
@@ -46,14 +46,14 @@ out_of_stock: Boolean flag (True/False)
 
 quantity: Units per package
 
-# Project Workflow
-1. Database & Table Creation
+## Project Workflow
+### 1. Database & Table Creation
 
 Designed schema with appropriate datatypes
 
 Imported dataset into PostgreSQL using \copy
 
-2. Data Exploration
+### 2. Data Exploration
 
 Row counts, sample checks
 
@@ -65,7 +65,7 @@ In-stock vs out-of-stock summary
 
 Duplicate product detection
 
-3. Data Cleaning
+### 3. Data Cleaning
 
 Removed rows with invalid pricing (mrp = 0 or selling_price = 0)
 
@@ -73,7 +73,7 @@ Converted prices from paise to rupees
 
 Ensured consistent formatting
 
-4. Business Analysis Queries
+### 4. Business Analysis Queries
 
 Top 10 best-value products (highest discount %)
 
@@ -101,7 +101,7 @@ Bulk-weight items contributed disproportionately to total inventory weight.
 
 Price-per-gram analysis helped highlight best-value products for customers.
 
-🛠️ Tech Stack
+## Tech Stack
 
 Database: PostgreSQL
 
